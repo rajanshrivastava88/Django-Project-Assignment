@@ -5,3 +5,9 @@ class UploadForm(forms.Form):
     file = forms.FileField(required=True, allow_empty_File=False,
                             mimetypes=['application/vnd.ms-excel', 'text/csv'])
     # Add other validation rules as needed
+
+    from django import forms
+
+#class UploadFileForm(forms.Form):
+# file = forms.FileField(label='Upload File')
+
