@@ -1,6 +1,6 @@
 from django.db import models
 
-class Upload(models.Model):
-    file = models.FileField(upload_to='uploads/')  # Adjust upload path if needed
-    
-
+class UploadData(models.Model):
+  state = models.CharField(max_length=255)
+  dpd = models.IntegerField()
+  count = models.IntegerField()
